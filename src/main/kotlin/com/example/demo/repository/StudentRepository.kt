@@ -14,7 +14,7 @@ import io.swagger.annotations.ApiOperation
 @RepositoryRestResource
 interface StudentRepository : JpaRepository<Student, Long> {
 
-    @ApiOperation("Find by FirstName  ")
+    @ApiOperation("Find by FirstName ")
     @RestResource(path = "byFirstName")
     fun findByFirstNameIgnoreCase(@Param("firstName") firstName: String): List<Student>
 }
