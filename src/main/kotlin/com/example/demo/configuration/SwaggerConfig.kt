@@ -22,9 +22,9 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2
 import java.util.Arrays.asList
 
 @Configuration
-//@EnableAsync
+@EnableAsync
 @EnableSwagger2
-@Import(SpringDataRestConfiguration::class)
+//@Import(SpringDataRestConfiguration::class)
 private class SwaggerConfig {
     protected var mainApiMethods = arrayOf(RequestMethod.GET, RequestMethod.POST, RequestMethod.PUT, RequestMethod.PATCH, RequestMethod.DELETE)
 
